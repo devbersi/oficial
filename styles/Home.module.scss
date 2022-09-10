@@ -1,0 +1,1022 @@
+.sideDock {
+  width: 8rem;
+  height: 17rem;
+  position: fixed;
+
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .icons {
+    background-color: #333333;
+    height: 100%;
+    width: 80%;
+
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-right: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .toggle {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.Main {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+
+  overflow-x: hidden;
+  background-color: #0c0c0c;
+
+  .ContentPage {
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    .Introduction {
+      width: 50%;
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .Infos {
+        width: 50%;
+        height: 20%;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+
+        .TextIntroduction {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 47px;
+
+          color: #f9f9f9;
+        }
+
+        .TextPosition {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 23px;
+          text-align: start;
+          align-self: flex-start;
+
+          color: #828282;
+        }
+      }
+
+      .Buttons {
+        width: 50%;
+        height: 20%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+
+        .DownloadButton {
+          width: 143px;
+          height: 42px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          background-color: #6c63ff;
+          border-style: none;
+          margin-right: 20px;
+
+          color: #171717;
+          font-size: 14px;
+          line-height: 18.23px;
+          font-family: "DM Sans";
+          cursor: pointer;
+
+          &:hover {
+            background-color: #847feb;
+            transition: ease-in-out 0.2s;
+          }
+        }
+
+        .ContactButton {
+          width: 157px;
+          height: 42px;
+
+          border: 1px solid #333333;
+          background-color: #171717;
+
+          color: #fff;
+          font-size: 14px;
+          line-height: 18.23px;
+          font-family: "DM Sans";
+          cursor: pointer;
+
+          &:hover {
+            background-color: #847feb;
+            transition: ease-in-out 0.2s;
+          }
+        }
+      }
+
+      .Illustration {
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .HeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100vw;
+    height: 8vh;
+
+    color: #f9f9f9;
+    font-family: "DM Sans";
+
+    .HeaderTitle {
+      font-size: 26px;
+      line-height: 33.85px;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-weight: 700;
+      height: 100%;
+
+      width: 20%;
+      cursor: pointer;
+    }
+
+    .HeaderList {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      flex-direction: row;
+      list-style: none;
+
+      width: 30%;
+      height: 100%;
+
+      li {
+        font-size: 18px;
+        line-height: 23.44px;
+
+        a {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .AboutMe {
+    width: 100%;
+    height: 100%;
+
+    background-color: #0c0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    .TextAboutMe {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+
+      width: 40%;
+      height: 20%;
+
+      text-align: center;
+
+      h4 {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+        /* identical to box height */
+
+        text-align: center;
+        color: #f9f9f9;
+      }
+
+      p {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        /* or 178% */
+
+        text-align: center;
+
+        color: #828282;
+      }
+    }
+  }
+
+  .ListContacts {
+    width: 65%;
+    height: 25%;
+
+    ul {
+      flex-direction: row;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      width: 100%;
+      height: 100%;
+
+      li {
+        list-style: none;
+        text-align: center;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        div {
+          background-color: #212121;
+          width: 62px;
+          height: 62px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          border-radius: 50px;
+        }
+
+        h4 {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 23px;
+
+          color: #f9f9f9;
+        }
+
+        p {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21px;
+          /* identical to box height */
+
+          color: #828282;
+        }
+      }
+    }
+  }
+
+  .ProjectsPage {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-color: #0c0c0c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 0;
+
+    h4 {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 42px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #f9f9f9;
+    }
+
+    .GridProjects {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+
+      width: 80%;
+      height: 80%;
+      padding: 25px;
+
+      .FirstRow {
+        width: 100%;
+        height: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-bottom: 25px;
+
+        .Project {
+          background: #212121;
+          border: 1px solid #333333;
+          width: 350px;
+          height: 240px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          padding: 15px;
+
+          .ImageProject {
+            background-color: #171717;
+
+            width: 100%;
+            height: 60%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .DescriptionProject {
+            width: 100%;
+            height: 40%;
+
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+
+            .TypeProject {
+             display: none;
+            }
+
+            p {
+              font-family: "DM Sans";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 23px;
+
+              color: #ffffff;
+            }
+
+            span {
+              font-family: "DM Sans";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 18px;
+
+              color: #828282;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ServicesPage {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-color: #0c0c0c;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    margin: 0;
+
+    .Services {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+
+      width: 80%;
+
+      h4 {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+
+        text-align: center;
+
+        color: #f9f9f9;
+      }
+
+      .ServicesList {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+
+        gap: 45px;
+        width: 100%;
+        height: 100%;
+
+        .ServicesCard {
+          width: 350px;
+          height: 240px;
+          background: #212121;
+          border: 1px solid #333333;
+          border-bottom: 3px solid #6c63ff;
+
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+
+          padding: 15px;
+
+          p {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 42px;
+
+            color: #828282;
+          }
+        }
+      }
+    }
+
+    .Skills {
+      width: 100%;
+      height: 30%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h4 {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #f9f9f9;
+      }
+
+      .SkillsList {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 51px;
+
+        width: 100%;
+        height: 60%;
+
+        .SkillsCard {
+          width: 150px;
+          height: 150px;
+
+          background: #212121;
+          border: 1px solid #333333;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE SCSS
+
+@media screen and (min-width: 94px) and (max-width: 1250px) {
+  .Main {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+
+    overflow-x: hidden;
+    background-color: #0c0c0c;
+
+    .ContentPage {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .Introduction {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .Infos {
+          width: 100%;
+          height: 40%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          .TextIntroduction {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 31px;
+
+            color: #f9f9f9;
+          }
+
+          .TextPosition {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+            text-align: justify;
+
+            color: #828282;
+          }
+        }
+
+        .Buttons {
+          width: 100%;
+          height: 20%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+
+          .DownloadButton {
+            width: 30%;
+            height: 40%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: #6c63ff;
+            border-style: none;
+            margin-right: 20px;
+
+            color: #171717;
+            font-size: 14px;
+            line-height: 18.23px;
+            font-family: "DM Sans";
+            cursor: pointer;
+
+            &:hover {
+              background-color: #847feb;
+              transition: ease-in-out 0.2s;
+            }
+          }
+
+          .ContactButton {
+            width: 30%;
+            height: 40%;
+
+            border: 1px solid #333333;
+            background-color: #171717;
+
+            color: #fff;
+            font-size: 14px;
+            line-height: 18.23px;
+            font-family: "DM Sans";
+            cursor: pointer;
+
+            &:hover {
+              background-color: #847feb;
+              transition: ease-in-out 0.2s;
+            }
+          }
+        }
+      }
+    }
+
+    .Illustration{
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    .HeaderContainer {
+      display: none;
+    }
+    .AboutMe {
+      width: 100%;
+      height: 100%;
+
+      background-color: #0c0c0c;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+
+      .TextAboutMe {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+
+        width: 80%;
+        height: 20%;
+
+        text-align: center;
+
+        h4 {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 42px;
+          /* identical to box height */
+
+          text-align: center;
+          color: #f9f9f9;
+        }
+
+        p {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 32px;
+          /* or 178% */
+
+          text-align: center;
+
+          color: #828282;
+        }
+      }
+    }
+
+    .ListContacts {
+      width: 100%;
+      height: 50%;
+
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      
+
+      ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+
+
+        width: 70%;
+        height: 30%;
+
+        li {
+          list-style: none;
+          text-align: center;
+          height: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          div {
+            background-color: #212121;
+            width: 60px;
+            height: 60px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50px;
+          }
+
+          h4 {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 23px;
+
+            color: #f9f9f9;
+          }
+
+          p {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 21px;
+            /* identical to box height */
+
+            color: #828282;
+          }
+        }
+      }
+    }
+
+    .ProjectsPage {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h4 {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #f9f9f9;
+      }
+
+      .GridProjects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+        width: 100%;
+        height: 100% ;
+
+        .FirstRow {
+          width: 100%;
+          height: 50%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          margin: 0;
+          padding: 0;
+
+          .Project {
+            background: #212121;
+            border: 1px solid #333333;
+            width: 80%;
+            height: 30%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            padding: 15px;
+            margin-bottom: 15px;
+
+            .ImageProject {
+              background-color: #171717;
+
+              width: 100%;
+              height: 60%;
+
+              display: none;
+              align-items: center;
+              justify-content: center;
+
+              h4 {
+                font-size: 16px;
+              }
+            }
+
+            .DescriptionProject {
+              width: 100%;
+              height: 40%;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+
+              .TypeProject {
+                font-family: "DM Sans";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 23px;
+
+                color: #847feb;
+                display: flex;
+              }
+
+              p {
+                font-family: "DM Sans";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 23px;
+
+                color: #ffffff;
+              }
+
+              span {
+                font-family: "DM Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 9px;
+                line-height: 18px;
+
+                color: #828282;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ServicesPage {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+
+
+      .Services {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+
+        h4 {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 42px;
+
+          text-align: center;
+
+          color: #f9f9f9;
+
+          padding: 0;
+          margin: 0;
+        }
+
+        .ServicesList {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          width: 100%;
+          height: 50%;
+
+          .ServicesCard {
+            width: 80%;
+            height: 32%;
+            background: #212121;
+            border: 1px solid #333333;
+            border-bottom: 3px solid #6c63ff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            padding: 15px;
+
+            p {
+              font-family: "DM Sans";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 42px;
+              text-align: center;
+
+              color: #828282;
+
+              br {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+
+      .Skills {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+        h4 {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 42px;
+          /* identical to box height */
+
+          text-align: center;
+
+          color: #f9f9f9;
+        }
+
+        .SkillsList {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          justify-content: space-around;
+
+
+          width: 90%;
+          height: 90%;
+          margin-bottom: 20px;
+
+          .SkillsCard {
+            width: 70px;
+            height: 80px;
+
+            background: #212121;
+            border: 1px solid #333333;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
