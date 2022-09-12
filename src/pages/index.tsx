@@ -21,7 +21,7 @@ import {
   SiNodedotjs,
   SiGithub,
 } from "react-icons/si";
-import Modal from 'react-modal'
+import Modal from "react-modal";
 
 const Home: NextPage = () => {
   const [handleDock, setHandleDock] = useState(false);
@@ -183,7 +183,9 @@ const Home: NextPage = () => {
                 See my carreer
               </a>
               <button className={styles.ContactButton}>
-                Send me a Message
+                <a href="https://contate.me/devbersi" target="_blank">
+                  Send me a Message
+                </a>
               </button>
             </div>
           </div>
@@ -246,7 +248,7 @@ const Home: NextPage = () => {
                   <h4>Private Project</h4>
                 </div>
                 <div className={styles.DescriptionProject}>
-                  <p className={styles.TypeProject} >Project for company</p>
+                  <p className={styles.TypeProject}>Project for company</p>
                   <p>Employee Management</p>
                   <span>
                     Tech: ReactJS, Typescript, ContextAPI, Styled Components and
@@ -259,7 +261,7 @@ const Home: NextPage = () => {
                   <h4>Private Project</h4>
                 </div>
                 <div className={styles.DescriptionProject}>
-                  <p className={styles.TypeProject} >Project for company</p>
+                  <p className={styles.TypeProject}>Project for company</p>
                   <p>Marketplace for Coffeeshop</p>
                   <span>
                     Tech: React Native, Typescript, Expo, NodeJS, MySQL.
@@ -271,7 +273,7 @@ const Home: NextPage = () => {
                   <h4>Private Project</h4>
                 </div>
                 <div className={styles.DescriptionProject}>
-                  <p className={styles.TypeProject} >Project for company</p>
+                  <p className={styles.TypeProject}>Project for company</p>
                   <p>Incident Report App</p>
                   <span>
                     Tech: React Native, Typescript, Styled-Components, Expo,
@@ -286,7 +288,7 @@ const Home: NextPage = () => {
                   <h4>Private Project</h4>
                 </div>
                 <div className={styles.DescriptionProject}>
-                  <p className={styles.TypeProject} >Project for company</p>
+                  <p className={styles.TypeProject}>Project for company</p>
                   <p>Applyer of tax</p>
                   <span>
                     Tech: ReactJS, Typescript, Styled-Components, NodeJS, MySQL.
@@ -298,9 +300,9 @@ const Home: NextPage = () => {
                   <h4>Private Project</h4>
                 </div>
                 <div className={styles.DescriptionProject}>
-                  <p className={styles.TypeProject} >Project for company</p>
+                  <p className={styles.TypeProject}>Project for company</p>
                   <p>Basic to-do/pomodoro Web</p>
-                  <span>Tech: NextJS, Typescript, scss, </span> 
+                  <span>Tech: NextJS, Typescript, scss, </span>
                 </div>
               </div>
               <div className={styles.Project}>
