@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../../styles/Home.module.scss";
@@ -21,7 +21,6 @@ import {
   SiNodedotjs,
   SiGithub,
 } from "react-icons/si";
-import Modal from "react-modal";
 
 const Home: NextPage = () => {
   const [handleDock, setHandleDock] = useState(false);
